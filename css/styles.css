@@ -385,6 +385,7 @@ a {
 		cursor: pointer;
   }
 }
+
 button.store:hover {
 	background-color: #866dd0;
  }
@@ -1683,6 +1684,10 @@ button.store:hover {
 	}
 }
 
+.download-app:hover {
+	background: #866dd0;
+}
+
 @media (max-width: 640px) {
 	.download-app {
 		display: block;
@@ -1730,11 +1735,11 @@ button.store:hover {
 	}
 }
 
-@media (max-width: 640px) {
+/*@media (max-width: 640px) {
 	.download-app:hover {
 		background-color: #866dd0;
 	}
-}
+}*/
 
 @media (max-width: 640px) {
 	.download-app__title {
@@ -1829,6 +1834,10 @@ button.store:hover {
 		width: 100%;
 		max-width: 735px;
 	}
+}
+
+.footer button.store:hover {
+	background: #866dd0;
 }
 
 @media (max-width: 640px) {
