@@ -1544,7 +1544,7 @@ button.store:hover {
 		border-radius: 25px;
 		background: url(../images/svg/surface_logo.svg) no-repeat #5e42b0;
 		background-size: 77%;
-		background-position: 16px 21px;
+		background-position: 16px 23px;
 	}
 }
 @media (max-width: 640px) {
