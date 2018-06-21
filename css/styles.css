@@ -1533,6 +1533,7 @@ button.store:hover {
 @media (max-width: 640px) {
 	.download-app:hover {
 		background: url(../images/svg/surface_logo.svg) no-repeat #866dd0;
+		background-size: 77%;
 		background-position: 6px 12px;
 	}
 }
@@ -1552,6 +1553,7 @@ button.store:hover {
 @media (min-width: 641px) and (max-width: 960px) {
 	.download-app:hover {
 		background: url(../images/svg/surface_logo.svg) no-repeat #866dd0;
+		background-size: 77%;
 		background-position: 14px 24px;
 	}
 }
@@ -1574,6 +1576,7 @@ button.store:hover {
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
 	.download-app:hover {
 		background: url(../images/svg/surface_logo.svg) no-repeat #866dd0;
+		background-size: 77%;
 		background-position: 16px 23px;
 	}
 }
