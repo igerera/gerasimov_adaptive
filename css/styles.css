@@ -1500,11 +1500,6 @@ button.store:hover {
 		display: flex;
 	}
 }
-.download-app:hover {
-	background: url(../images/svg/surface_logo.svg) no-repeat #866dd0;
-	background-size: 77%;
-	background-position: 16px 23px;
-}
 @media (max-width: 640px) {
 	.download-app {
 		width: 70px;
@@ -1515,6 +1510,12 @@ button.store:hover {
 		border-radius: 15px;
 		background: url(../images/svg/surface_logo.svg) no-repeat #5e42b0;
 		background-size: 77%;
+		background-position: 6px 12px;
+	}
+}
+@media (max-width: 640px) {
+	.download-app:hover {
+		background: url(../images/svg/surface_logo.svg) no-repeat #866dd0;
 		background-position: 6px 12px;
 	}
 }
@@ -1547,6 +1548,14 @@ button.store:hover {
 		background-position: 16px 23px;
 	}
 }
+@media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
+	.download-app:hover {
+		background: url(../images/svg/surface_logo.svg) no-repeat #866dd0;
+		background-size: 77%;
+		background-position: 16px 23px;
+	}
+}
+
 @media (max-width: 640px) {
 	.download-app__title {
 		font-size: 32px;
