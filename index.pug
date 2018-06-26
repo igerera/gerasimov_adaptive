@@ -8,30 +8,32 @@ html
 		link(rel="stylesheet", href="css/styles.css")
 	body
 		header.header
-			.header__logo
-			h1.header__title
-				span.title__title be recruited 
-				span.title__subtitle play college sports
-			.store__buttons
-				button.store
-					a.button-content__wrapper(href="https://www.apple.com/ru/ios/app-store/")
-						.button__apple-store
-						.button-text__wrapper
-							p download on the 
-							p.appstore appstore
-				button.store
-					a.button-content__wrapper(href="https://play.google.com/store")
-						.button__google-play
-						.button-text__wrapper
-							p get it on 
-							p.google-play google play
+			.header-logo
+			h1.visually-hidden
+				| Surface
+			.header-title
+				span.title-title be recruited 
+				span.title-subtitle play college sports
+			.store-buttons
+				a.button-apple-store(href='#')
+					.apple-store-logo
+					span.button-apple-text
+						| download on the
+						br
+						b app store
+				a.button-google-play(href="#")
+					.google-play-logo
+					span.button-google-text
+						| get it on
+						br
+						b google play
 		main.main
 			section.athlets
-				h2.athlets__title
+				h2.athlets-title
 					| Athlets			
-				.athlets__features
-					.athlets__pic
-					.features__wrapper
+				.athlets-features
+					.athlets-pic
+					.features-wrapper
 						.feature-1
 							h3.feat-title
 								span 01
@@ -51,11 +53,11 @@ html
 							p.feat-description
 								| Resources and tools for you to get better as a student Athlete. Access to training classes, tutor sessions, etc 
 			section.players
-				h2.players__title
+				h2.players-title
 					| Players
-				.players__features
-					.players__pic
-					.features__wrapper
+				.players-features
+					.players-pic
+					.features-wrapper
 						.feature-1
 							h3.feat-title
 								span 01
@@ -76,66 +78,66 @@ html
 								| Save your time, recruit proper athlets for your team.
 			section.advantages
 				.advantage-1
-					.advantage__pic
+					.advantage-pic
 						picture.pic-1
 							source(media='(max-width: 640px)', srcset='images/img/be-active_640.jpg')
 							source(media='(min-width: 641px) and (max-width: 960px)', srcset='images/img/be-active_960.jpg')
 							source(media='(min-width: 961px) and (max-width: 1920px), (min-width: 1920px)', srcset='images/img/be-active_960.jpg')
 							img(src='images/img/be-active.jpg', width="100%" alt='Man with cellphone')
-						.advantages__counter 
+						.advantages-counter 
 							span 01
-					.advantage-text__wrapper
-						h3.advantage__title
+					.advantage-text-wrapper
+						h3.advantage-title
 							| be active
-						p.advantage__description
+						p.advantage-description
 							| Post videos with your skills, Like and follow others to be more popular.
 				.advantage-2
-					.advantage__pic
+					.advantage-pic
 						picture.pic-2
 							source(media='(max-width: 640px)', srcset='images/img/find-contact_640.jpg')
 							source(media='(min-width: 641px) and (max-width: 960px)', srcset='images/img/find-contact_960.jpg')
 							source(media='(min-width: 961px) and (max-width: 1920px), (min-width: 1920px)', srcset='images/img/find-contact_1024.jpg')
 							img(src='images/img/find-contact.jpg.jpg', width="100%" alt='Old wise trainer')
-						.advantages__counter 
+						.advantages-counter 
 							span 02
-					.advantage-text__wrapper
-						h3.advantage__title
+					.advantage-text-wrapper
+						h3.advantage-title
 							| find contact
-						p.advantage__description
+						p.advantage-description
 							| Contact others to find right coach or athlete you are looking for.
 				.advantage-3
-					.advantage__pic
+					.advantage-pic
 						picture.pic-3
 							source(media='(max-width: 640px)', srcset='images/img/work-it_640.jpg')
 							source(media='(min-width: 641px) and (max-width: 960px)', srcset='images/img/work-it_960.jpg')
 							source(media='(min-width: 961px) and (max-width: 1920px), (min-width: 1920px)', srcset='images/img/work-it_1024.jpg')
 							img(src='images/img/find-contact.jpg.jpg', width="100%" alt='The team')
-						.advantages__counter 
+						.advantages-counter 
 							span 03
-					.advantage-text__wrapper
-						h3.advantage__title
+					.advantage-text-wrapper
+						h3.advantage-title
 							| work it
-						p.advantage__description
+						p.advantage-description
 							| Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.
 		footer.footer
-			.download-app__wrapper
-				a.download-app(href="https://play.google.com/store/search?q=surface&c=apps" type="button")
-				.download-app-text__wrapper
-					h2.download-app__title
+			.download-app-wrapper
+				a.download-app(href="#")
+				.download-app-text-wrapper
+					h2.download-app-title
 						| download app
-					p.download-app__subtitle
+					p.download-app-subtitle
 						| show everyone what you can do!
-			.store__buttons
-				button.store
-					a.button-content__wrapper(href="https://www.apple.com/ru/ios/app-store/")
-						.button__apple-store
-						.button-text__wrapper
-							p download on the 
-							p.appstore appstore
-				button.store
-					a.button-content__wrapper(href="https://play.google.com/store")
-						.button__google-play
-						.button-text__wrapper
-							p get it on 
-							p.google-play google play
-			.footer__logo
+			.store-buttons
+				a.button-apple-store(href='#')
+					.apple-store-logo
+					span.button-apple-text
+						| download on the
+						br
+						b appstore
+				a.button-google-play(href="#")
+					.google-play-logo
+					span.button-google-text
+						| get it on
+						br
+						b google play
+			.footer-logo
