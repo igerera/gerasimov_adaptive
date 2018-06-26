@@ -12,7 +12,7 @@ html {
 	box-sizing: border-box;
 }
 body {
-	max-width: 1920px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -23,76 +23,99 @@ a {
 	text-decoration: none;
 	color: #ffffff;
 }
+main {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0;
+}
 
 /*Header*/
 @media (max-width: 640px) {
-	header.header {
+	.header {
 		position: relative;
 		width: 100%;
 		max-width: 640px;
+		padding-top: 1px;
 		padding-bottom: 79px;
-		background: url(../images/img/football_767.jpg) no-repeat;
-		background-size: cover;
-		background-size: 144%;
-		background-position: 52% 33%;
+		background: rgb(15, 15, 49);
+		z-index: 1;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
-	header.header {
+	.header {
 		position: relative;
 		width: 100%;
 		max-width: 960px;
-		padding-bottom: 11.9%;
-		background: url(../images/img/football_1280.jpg) no-repeat;
-		background-position: -253px -40px;
+		padding-top: 1px;
+		padding-bottom: 11.7%;
+		background: rgb(15, 15, 49);
+		background-position: 0 0;
 		background-size: 166%;
+		z-index: 1;
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
-	header.header {
+	.header {
 		position: relative;
 		width: 100%;
-		max-width: 1920px;
-		height: 100%;
-		background: url(../images/img/football_1920.jpg) no-repeat;
+		padding-top: 1px;
+		padding-bottom: 5.7%;
+		background: rgb(15, 15, 49);
 		background-size: cover;
+		z-index: 1;
 	}
 }
 @media (max-width: 640px) {
-	header.header::before {
+	.header::before {
 		position: absolute;
-		width: 100%;
-		height: 100%;
 		display: block;
 		content: '';
-		background: rgba(15, 15, 49, 0.9);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(../images/img/football_767.jpg) no-repeat;
+		background-size: 141%;
+	    background-position: -66px -24px;
+		opacity: 0.1;
+		z-index: -1;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
-	header.header::before {
+	.header::before {
 		position: absolute;
-		width: 100%;
-		height: 100%;
 		display: block;
 		content: '';
-		background: rgba(15, 15, 49, 0.9);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(../images/img/football_1280.jpg) no-repeat;
+		background-position: -253px -39px;
+		background-size: 166%;
+		opacity: 0.1;
+		z-index: -1;
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
-	header.header::before {
+	.header::before {
 		position: absolute;
-		width: 100%;
-		height: 100%;
 		display: block;
 		content: '';
-		background: rgba(15, 15, 49, 0.9);
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(../images/img/football_1920.jpg) no-repeat;
+		background-position: 0 0;
+		background-size: cover;
+		opacity: 0.1;
+		z-index: -1;
 	}
 }
 @media (max-width: 640px) {
 	.header-logo {
-		position: relative;
-		top: 33px;
-		margin: 0 auto;
+		margin: 10% auto;
 		width: 135px;
 		height: 40px;
 		background: url(../sources/surface_logo_text.svg) no-repeat;
@@ -100,13 +123,20 @@ a {
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.header-logo {
-		position: relative;
-		top: 40px;
-		margin: 0 auto;
+		margin: 5% auto;
 		width: 205px;
-		height: 53px;
+		height: 55px;
 		background: url(../sources/surface_logo_text.svg) no-repeat;
 		background-size: cover;
+	}
+}
+@media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
+	.header-logo {
+		margin: 2.3% auto;
+		width: 194px;
+		height: 53px;
+		background: url(../sources/surface_logo_text.svg) no-repeat;
+		background-size: 100%;
 	}
 }
 .visually-hidden {
@@ -116,81 +146,61 @@ a {
 	height: 1px;
 	margin: -1px;
 }
-@media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
-	.header-logo {
-		position: relative;
-		top: 46px;
-		right: 1px;
-		margin: 0 auto;
-		width: 194px;
-		height: 53px;
-		background: url(../sources/surface_logo_text.svg) no-repeat;
-		background-size: 100%;
-	}
-}
 @media (max-width: 640px) {
 	.header-title {
-		position: relative;
-		padding-top: 48.5%;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		padding-top: 28.5%;
+		padding-left: 6%;
+		padding-right: 6%;
 		font-size: 28px;
 		font-weight: 700;
 		color: #FFFFFF;
 		text-transform: uppercase;
-		margin: 0 auto;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.header-title {
-		position: relative;
-		padding-top: 29.5%;
-		width: 641px;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		padding-top: 19%;
+		padding-left: 11%;
+		padding-right: 10%;
 		font-size: 64px;
 		font-weight: 700;
 		color: #FFFFFF;
 		text-transform: uppercase;
-		margin: 0 auto;
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
 	.header-title {
-		position: relative;
-		padding-top: 18.3%;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
+		max-width: 1920px;
+		margin: 0 auto;
+		padding-top: 13.5%;
+		padding-left: 9.5%;
+		padding-right: 10%;
 		font-size: 93px;
 		font-weight: 700;
 		color: #FFFFFF;
 		text-transform: uppercase;
-		margin: 0 auto;
 	}
 }
 @media (max-width: 640px) {
-	.title-title {
-		padding-left: 6%;
+	.line-1 {
+		display: block;
 		padding-bottom: 17px;
 		line-height: 38px;
 		letter-spacing: 1.3px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
-	.title-title {
-		padding-left: 3%;
+	.line-1 {
+		display: block;
 		padding-bottom: 20px;
-		line-height: 38px;
+		line-height: 39px;
 		letter-spacing: 3.3px;
 		text-align: left;
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
-	.title-title {
-		padding-left: 9.5%;
+	.line-1 {
+		display: block;
 		padding-bottom: 35px;
 		line-height: 38px;
 		letter-spacing: 3px;
@@ -198,34 +208,34 @@ a {
 }
 
 @media (max-width: 640px) {
-	.title-subtitle {
-		min-width: 270px;
-		align-self: flex-end;
-		padding-left: 20%;
+	.line-2 {
+		display: block;
+		width: 84%;
+		margin-left: auto;
 		letter-spacing: 1.3px;
 		line-height: 33px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
-	.title-subtitle {
-		width: 656px;
-		padding-left: 20%;
+	.line-2 {
+		display: block;
+		width: 82%;
+		margin-left: auto;
 		letter-spacing: 3px;
 		line-height: 78px;
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
-	.title-subtitle {
-		padding-right: 9.9%;
-		letter-spacing: 3px;
+	.line-2 {
+		display: block;
 		line-height: 78px;
 		text-align: right;
+		letter-spacing: 2.7px;
 	}
 }
 @media (max-width: 640px) {
 	.header .store-buttons {
-		position: relative;
-		margin: 26.5% auto 0;
+		margin: 26% auto 0;
 		width: 100%;
 		max-width: 280px;
 	}
@@ -233,15 +243,14 @@ a {
 @media (min-width: 641px) and (max-width: 960px) {
 	.header .store-buttons {
 		display: flex;
-		width: 100%;
-		margin: 39% 5.5% 0;
+		margin: 38.7% 5.5% 0;
 		max-width: 685px;
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
 	.header .store-buttons {
 		display: flex;
-		margin: 11.4% auto 5.6%;
+		margin: 11.4% auto 0;
 		width: 100%;
 		max-width: 736px;
 	}
@@ -274,7 +283,7 @@ a {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 76px;
+		height: 79px;
 		max-width: 310px;
 	 	margin:0 auto;
 		background-color: #5e42b0;
@@ -293,7 +302,7 @@ a {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 78px;
+		height: 79px;
 		max-width: 310px;
 		margin: 0 27px;
 		background-color: #5e42b0;
@@ -332,7 +341,7 @@ a {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 76px;
+		height: 79px;
 		max-width: 310px;
 	 	margin: 0 auto;
 		background-color: #5e42b0;
@@ -351,7 +360,7 @@ a {
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-		height: 78px;
+		height: 79px;
 		max-width: 310px;
 		margin: 0 27px;
 		background-color: #5e42b0;
@@ -408,11 +417,11 @@ a {
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
 	.apple-store-logo {
 		align-self: center;
-  		margin: -2px 0 0 0;
+  		margin: -5px 0 0 5px;
 		width: 49px;
 		height: 49px;
 		background: url(../images/svg/apple_logo_black.svg) no-repeat;
-		background-position: 0 -1px;
+		background-position: 0 0;
 		background-size: cover;
 	}
 }
@@ -467,7 +476,7 @@ a {
 		align-self: center;
 		width: 49px;
 		height: 49px;
-		margin: -1px 23px 0 -31px;
+		margin: 1px 23px 0 -31px;
 		background: url(../images/svg/google-play.svg) no-repeat;
 		background-position: 1px 0px;
 		background-size: cover;
@@ -634,7 +643,7 @@ a {
 	.athlets-pic {
 		position: absolute;
 		top: -73px;
-		left: -162px;
+		left: -169px;
 		width: 100%;
 		max-width: 497px;
 		height: 600px;
@@ -1220,7 +1229,7 @@ a {
 @media (max-width: 640px) {
 	.advantages-counter {
 		position: absolute;
-		bottom: -6px;
+		bottom: -8px;
 		left: 20px;
 		width: 70px;
 		height: 70px;
@@ -1472,76 +1481,92 @@ a {
 
 /*Footer*/
 @media (max-width: 640px) {
-	footer.footer {
+	.footer {
 		position: relative;
 		width: 100%;
+		padding-bottom: 2%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background: url(../images/img/game_767.jpg) no-repeat;
-		background-size: cover;
-		background-position: 73% 50%;
+		background: rgb(15, 15, 49);
+		z-index: 1;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
-	footer.footer {
+	.footer {
 		position: relative;
-  		padding-bottom: 12%;
 		width: 100%;
-		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background: url(../images/img/game_1280.jpg) no-repeat;
-		background-size: cover;
-		background-position: 50% 50%;
+		padding-bottom: 4%;
+		background: rgb(15, 15, 49);
+		z-index: 1;
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
-	footer.footer {
+	.footer {
 		position: relative;
-		padding-bottom: 2.5%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background: url(../images/img/game_1920.jpg) no-repeat;
-		background-size: cover;
-		background-position: -5px 0;
+		padding-bottom: 2.7%;
+		background: rgb(15, 15, 49);
+		z-index: 1;
 	}
 }
 @media (max-width: 640px) {
-	footer.footer::before {
+	.footer::before {
 		position: absolute;
-		width: 100%;
-		height: 100%;
-		display: block;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 		content: '';
-		background: rgba(15, 15, 49, 0.9);
+		display: block;
+		background: url(../images/img/game_767.jpg) no-repeat;
+		background-size: 140%;
+		background-position: -128px 3px;
+		opacity: 0.1;
+		z-index: -1;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
-	footer.footer::before {
+	.footer::before {
 		position: absolute;
-		width: 100%;
-		height: 100%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 		display: block;
 		content: '';
-		background: rgba(15, 15, 49, 0.9);
+		background: url(../images/img/game_1280.jpg) no-repeat;
+		background-size: 167%;
+		background-position: -256px -11px;
+		opacity: 0.1;
+		z-index: -1;
+		
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
-	footer.footer::before {
+	.footer::before {
 		position: absolute;
-		width: 100%;
-		height: 100%;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 		display: block;
 		content: '';
-		background: rgba(15, 15, 49, 0.9);
+		background: url(../images/img/game_1920.jpg) no-repeat;
+		background-size: cover;
+		opacity: 0.1;
+		z-index: -1;
+		
 	}
 }
 @media (max-width: 640px) {
 	.download-app-wrapper {
-		position: relative;
 		display: flex;
 		flex-direction: column;
 	}
@@ -1564,28 +1589,28 @@ a {
 @media (max-width: 640px) {
 	.download-app {
 		width: 70px;
-		height: 74px;
-		margin: 35% auto 16%;
+		height: 73px;
+		margin: 35% auto 17%;
 		border: none;
 		outline: none;
 		border-radius: 15px;
 		background: url(../images/svg/surface_logo.svg) no-repeat #5e42b0;
-		background-size: 77%;
-		background-position: 6px 12px;
+		background-size: 79%;
+		background-position: 7px 10px;
 	}
 }
 @media (max-width: 640px) {
 	.download-app:hover {
 		background: url(../images/svg/surface_logo.svg) no-repeat #866dd0;
-		background-size: 77%;
-		background-position: 6px 12px;
+		background-size: 79%;
+		background-position: 7px 10px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.download-app {
 		width: 130px;
 		height: 138px;
-		margin: 17% auto 4.5%;
+		margin: 17% auto 5%;
 		border: none;
 		outline: none;
 		border-radius: 32px;
@@ -1613,14 +1638,14 @@ a {
 		outline: none;
 		border-radius: 30px;
 		background: url(../images/svg/surface_logo.svg) no-repeat #5e42b0;
-		background-size: 77%;
+		background-size: 74%;
 		background-position: 16px 23px;
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
 	.download-app:hover {
 		background: url(../images/svg/surface_logo.svg) no-repeat #866dd0;
-		background-size: 77%;
+		background-size: 74%;
 		background-position: 16px 23px;
 	}
 }
@@ -1643,7 +1668,7 @@ a {
 		text-transform: uppercase;
 		text-align: center;
 		letter-spacing: 4.4px;
-		margin-bottom: -5px;
+		margin-bottom: -1%;
 	}
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
@@ -1686,8 +1711,8 @@ a {
 }
 @media (max-width: 640px) {
 	.footer .store-buttons {
-		position: relative;
-		margin: 23% auto 26%;
+		/*position: relative;*/
+		margin: 23% auto 0;
 		width: 100%;
 		max-width: 280px;
 	}
@@ -1696,7 +1721,7 @@ a {
 	.footer .store-buttons {
 		position: relative;
 		display: flex;
-  		margin: 36.5% 2.7% 0;
+  		margin: 36.3% 2.7% 0;
 		width: 100%;
 		max-width: 685px;
 	}
@@ -1710,65 +1735,10 @@ a {
 		max-width: 735px;
 	}
 }
-.footer button.store:hover {
-	background: #866dd0;
-}
-@media (max-width: 640px) {
-	.footer button.store {
-		display: flex;
-		width: 100%;
-		height: 33px;
-		max-width: 280px;
-		margin: 15px auto 0;
-		font-size: 8px;
-		background-color: #5e42b0;
-		border-radius: 20px;
-		border: none;
-		outline: none;
-		color: #ffffff;
-		text-transform: uppercase;
-		z-index: 50;
-		cursor: pointer;
-	}
-}
-@media (min-width: 641px) and (max-width: 960px) {
-	.footer button.store {
-		display: flex;
-		width: 100%;
-		height: 78px;
-		max-width: 310px;
-		margin: 0 auto;
-		background-color: #5e42b0;
-		border-radius: 42px;
-		border: none;
-		outline: none;
-		color: #ffffff;
-		text-transform: uppercase;
-		z-index: 50;
-		cursor: pointer;
-	}
-}
-@media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
-	.footer button.store {
-		width: 100%;
-		height: 78px;
-		max-width: 310px;
-	   	margin: 21.2% 27px 42.3%;
-		background-color: #5e42b0;
-		border-radius: 42px;
-		border: none;
-		outline: none;
-		color: #ffffff;
-		text-transform: uppercase;
-		z-index: 50;
-		cursor: pointer;
-	}
-}
 @media (max-width: 640px) {
 	.footer-logo {
-		position: relative;
 		bottom: 5px;
-		margin: 0 auto;
+		margin: 24% auto 0;
 		width: 135px;
 		height: 40px;
 		background: url(../sources/surface_logo_text.svg) no-repeat;
@@ -1776,9 +1746,7 @@ a {
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.footer-logo {
-		position: relative;
-		top: 56px;
-		margin: 0 auto;
+		margin: 7% auto 0;
 		width: 205px;
 		height: 53px;
 		background: url(../sources/surface_logo_text.svg) no-repeat;
@@ -1787,7 +1755,6 @@ a {
 }
 @media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
 	.footer-logo {
-		position: relative;
 		margin: 0 auto;
 		width: 199px;
 		height: 53px;
