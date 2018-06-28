@@ -620,7 +620,7 @@ main {
 @media (min-width: 961px) {
 	.feat-description {
 		font-weight: bold;
-		font-size: 23px;
+		font-size: 21px;
 		line-height: 19px;
 	}
 }
@@ -691,7 +691,7 @@ main {
 		background-size: 100%;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.athlets-pic {
 		position: absolute;
 		top: 29px;
@@ -706,7 +706,7 @@ main {
 		position: absolute;
 		top: -165px;
 		width: 50%;
-		height: 133%;
+		height: 147%;
 		background: url(../images/img/footballer_566.png) no-repeat;
 		background-position: 98% 0;
 	}
@@ -812,7 +812,7 @@ main {
 		padding-left: 52.4%;
 		padding-right: 10%;
 		padding-bottom: 53px;
-	    letter-spacing: -1.23px;
+	    letter-spacing: -0.23px;
 	}
 }
 
@@ -890,7 +890,7 @@ main {
 		padding-bottom: 55px;
 		padding-left: 52.3%;
 		line-height: 28px;
-	    letter-spacing: -1.18px;
+	    letter-spacing: -0.18px;
 	}
 }
 
@@ -1004,7 +1004,7 @@ main {
 		padding-bottom: 54px;
 		padding-left: 52.3%;
 		line-height: 27px;
-	    letter-spacing: -1.17px;
+	    letter-spacing: -0.17px;
 	}
 }
 
@@ -1034,7 +1034,7 @@ main {
 		text-transform: uppercase;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.players-title {
 		padding-top: 90px;
 		padding-right: 50%;
@@ -1089,7 +1089,7 @@ main {
 		background-size: 100%;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.players-pic {
 		position: absolute;
 		top: -175px;
@@ -1147,7 +1147,7 @@ main {
 		letter-spacing: 1.8px;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.players-features .feature-1 .feat-title {
 		padding-top: 53px;
 		padding-right: 50%;
@@ -1181,7 +1181,7 @@ main {
 		letter-spacing: 0.9px;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.players-features .feature-1 .feat-description {
 		padding-top: 16px;
 		padding-right: 50%;
@@ -1236,7 +1236,7 @@ main {
 		letter-spacing: 1.8px;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.players-features .feature-2 .feat-title {
 		padding-top: 22px;
 		padding-right: 50%;
@@ -1267,14 +1267,14 @@ main {
 		letter-spacing: 0.68px;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.players-features .feature-2 .feat-description {
 		padding-top: 25px;
 		padding-right: 50%;
 		padding-bottom: 84px;
 		padding-left: 10%;
 		line-height: 26px;
-		letter-spacing: -1.25px;
+		letter-spacing: -0.25px;
 	}
 }
 @media (min-width: 1921px) {
@@ -1366,7 +1366,7 @@ main {
 		letter-spacing: 1.5px;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.players-features .feature-3 .feat-title {
 		padding-top: 25px;
 		padding-right: 50%;
@@ -1400,7 +1400,7 @@ main {
 		letter-spacing: 1.18px;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.players-features .feature-3 .feat-description {
 		padding-top: 22px;
 		padding-right: 50%;
@@ -1408,7 +1408,6 @@ main {
 		padding-left: 10%;
 		font-size: 20px;
 		font-weight: normal;
-		/*line-height: 28px;*/
 		letter-spacing: 0.65px;
 	}
 }
@@ -1455,7 +1454,7 @@ main {
 		color: #e7e7e7;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.advantage-title {
 		font-size: 4vw;
 		text-transform: uppercase;
@@ -1485,7 +1484,7 @@ main {
 		color: #000000;
 	}
 }
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 961px) {
 	.advantage-description {
 		font-size: 1.25vw;
 		font-weight: 600;
