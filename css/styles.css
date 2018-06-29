@@ -394,7 +394,7 @@ main {
 		align-self: center;
 		width: 25px;
 		height: 29px;
-		margin: -9px 0 0 -6px;
+		margin: -5px 0 0 -6px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -590,12 +590,12 @@ main {
 @media (min-width: 961px) {
 	span.feature-counter::before {
 		position: absolute;
-		top: 27px;
+		top: 28px;
 		content: "";
 		width: 20px;
 		height: 5px;
 		background-color: #5e42b0;
-		bottom: 4px;
+		/*bottom: 4px;*/
 		border-radius: 2px;
 	}
 }
@@ -603,7 +603,7 @@ main {
 	.feat-description {
 		padding-left: 20px;
 		padding-right: 20px;
-		font-weight: 600;
+		font-weight: normal;
 		font-size: 15px;
 		line-height: 19px;
 	}
@@ -612,14 +612,14 @@ main {
 	.feat-description {
 		padding-left: 20px;
 		padding-right: 20px;
-		font-weight: bold;
+		font-weight: normal;
 		font-size: 15px;
 		line-height: 19px;
 	}
 }
 @media (min-width: 961px) {
 	.feat-description {
-		font-weight: bold;
+		font-weight: normal;
 		font-size: 21px;
 		line-height: 19px;
 	}
@@ -682,7 +682,7 @@ main {
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-pic {
 		position: absolute;
-		top: -72px;
+		top: -73px;
 		left: -162px;
 		width: 100%;
 		max-width: 497px;
@@ -758,7 +758,7 @@ main {
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-1 span.feature-counter {
-		top: 32px;
+		top: 30px;
 		left: 38%;
 	}
 }
@@ -776,16 +776,16 @@ main {
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-1 .feat-title {
-		padding-top: 5px;
+		padding-top: 4px;
 		padding-left: 42%;
 	    letter-spacing: 1.5px;
 	}
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-1 .feat-title {
-		padding-top: 48px;
-		padding-left: 54%;
-		letter-spacing: 3.4px;
+		padding-top: 49px;
+		padding-left: 54.2%;
+		letter-spacing: 3px;
 	}
 }
 @media (max-width: 640px) {
@@ -793,17 +793,17 @@ main {
 		padding-top: 16px;
 		padding-bottom: 50px;
 		line-height: 19px;
-		letter-spacing: 0.2px;
+		letter-spacing: 0.75px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-1 .feat-description {
-		padding-top: 16px;
+		padding-top: 15px;
 		padding-right: 4%;
 		padding-bottom: 33px;
 		padding-left: 37.7%;
 		line-height: 28px;
-		letter-spacing: 0.75px;
+		letter-spacing: 1.4px;
 	}
 }
 @media (min-width: 961px) {
@@ -812,7 +812,7 @@ main {
 		padding-left: 52.4%;
 		padding-right: 10%;
 		padding-bottom: 53px;
-	    letter-spacing: -0.23px;
+	    letter-spacing: 0.55px;
 	}
 }
 
@@ -840,7 +840,7 @@ main {
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-2 span.feature-counter {
-		top: 59px;
+		top: 58px;
 		left: 52.5%;
 	}
 }
@@ -870,27 +870,27 @@ main {
 		padding-top: 17px;
 		padding-bottom: 51px;
 		line-height: 18px;
-		letter-spacing: 0.15px;
+		letter-spacing: 0.75px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-2 .feat-description {
-		padding-top: 14px;
+		padding-top: 15px;
 		padding-right: 4%;
 		padding-bottom: 34px;
 		padding-left: 38%;
 		line-height: 28px;
-		letter-spacing: 0.67px;
+		letter-spacing: 1.27px;
 	}
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-2 .feat-description {
-		padding-top: 16px;
+		padding-top: 17px;
 		padding-right: 10%;
-		padding-bottom: 55px;
+		padding-bottom: 53px;
 		padding-left: 52.3%;
 		line-height: 28px;
-	    letter-spacing: -0.18px;
+	    letter-spacing: 0.57px;
 	}
 }
 
@@ -974,9 +974,9 @@ main {
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-3 .feat-title {
-		padding-top: 25px;
-		padding-left: 54%;
-		letter-spacing: 3.6px;
+		padding-top:25px;
+		padding-left: 54.2%;
+		letter-spacing: 3.4px;
 	}
 }
 @media (max-width: 640px) {
@@ -984,17 +984,17 @@ main {
 		padding-top: 18px;
 		padding-bottom: 54px;
 		line-height: 18px;
-	    letter-spacing: 0.18px;
+	    letter-spacing: 0.75px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-3 .feat-description {
-		padding-top: 16px;
+		padding-top: 17px;
 		padding-right: 4%;
 		padding-bottom: 34px;
 		padding-left: 37.9%;
 		line-height: 27px;
-		letter-spacing: 0.75px;
+		letter-spacing: 1.25px;
 	}
 }
 @media (min-width: 961px) {
@@ -1004,7 +1004,7 @@ main {
 		padding-bottom: 54px;
 		padding-left: 52.3%;
 		line-height: 27px;
-	    letter-spacing: -0.17px;
+	    letter-spacing: 0.55px;
 	}
 }
 
@@ -1149,7 +1149,7 @@ main {
 }
 @media (min-width: 961px) {
 	.players-features .feature-1 .feat-title {
-		padding-top: 53px;
+		padding-top: 52px;
 		padding-right: 50%;
 		padding-left: 11.5%;
 		letter-spacing: 2.9px;
@@ -1168,27 +1168,27 @@ main {
 		padding-bottom: 51px;
 		padding-left: 20px;
 		line-height: 18px;
-		letter-spacing: 0.17px;
+		letter-spacing: 0.75px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.players-features .feature-1 .feat-description {
-		padding-top: 17px;
+		padding-top: 18px;
 		padding-right: 42%;
-		padding-bottom: 8px;
+		padding-bottom: 33px;
 		padding-left: 4%;
 		line-height: 27px;
-		letter-spacing: 0.9px;
+		letter-spacing: 1.34px;
 	}
 }
 @media (min-width: 961px) {
 	.players-features .feature-1 .feat-description {
 		padding-top: 16px;
 		padding-right: 50%;
-		padding-bottom: 32px;
+		padding-bottom: 58px;
 		padding-left: 10%;
 		line-height: 26px;
-		letter-spacing: -0.75px;
+		letter-spacing: 0.55px;
 	}
 }
 @media (min-width: 1921px) {
@@ -1253,8 +1253,8 @@ main {
 }
 @media (max-width: 640px) {
 	.players-features .feature-2 .feat-description {
-		padding-bottom: 52px;
-		letter-spacing: 0.1px;
+		padding-bottom: 53px;
+		letter-spacing: 0.75px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -1264,17 +1264,17 @@ main {
 		padding-bottom: 33px;
 		padding-left: 4.5%;
 		line-height: 28px;
-		letter-spacing: 0.68px;
+		letter-spacing: 1.3px;
 	}
 }
 @media (min-width: 961px) {
 	.players-features .feature-2 .feat-description {
-		padding-top: 25px;
+		padding-top: 26px;
 		padding-right: 50%;
-		padding-bottom: 84px;
+		padding-bottom: 83px;
 		padding-left: 10%;
 		line-height: 26px;
-		letter-spacing: -0.25px;
+		letter-spacing: 0.65px;
 	}
 }
 @media (min-width: 1921px) {
@@ -1386,7 +1386,7 @@ main {
 	.players-features .feature-3 .feat-description {
 		padding-top: 17px;
 		padding-bottom: 53px;
-	    letter-spacing: 0.2px;
+	    letter-spacing: 0.75px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -1397,7 +1397,7 @@ main {
 		padding-left: 4.5%;
 		font-size: 16px;
 		line-height: 28px;
-		letter-spacing: 1.18px;
+		letter-spacing: 1.79px;
 	}
 }
 @media (min-width: 961px) {
@@ -1471,7 +1471,7 @@ main {
 @media (max-width: 640px) {
 	.advantage-description {
 		font-size: 16px;
-		font-weight: 600;
+		font-weight: normal;
 		line-height: 20px;
 		color: #000000;
 	}
@@ -1487,7 +1487,7 @@ main {
 @media (min-width: 961px) {
 	.advantage-description {
 		font-size: 1.25vw;
-		font-weight: 600;
+		font-weight: normal;
 		color: #000000;
 	}
 }
@@ -1518,7 +1518,7 @@ main {
 		bottom: -31px;
 		left: 32px;
 		width: 116px;
-		height: 115px;
+		height: 116px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1651,21 +1651,21 @@ main {
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.advantage-1 .advantages-counter-container .advantage-counter {
-		top: -8px;
+		top: -7px;
 		left: 1px;
 	}
 }
 @media (min-width: 961px) {
 	.advantage-1 .advantages-counter-container .advantage-counter {
 		top: -7px;
-		left: -2px;
+		left: -1px;
 	}
 }
 @media (max-width: 640px) {
 	.advantage-1 .advantage-title {
 		padding-top: 20px;
 		padding-left: 18px;
-		letter-spacing: 2px;
+		letter-spacing: 1.2px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -1677,7 +1677,7 @@ main {
 @media (min-width: 961px) {
 	.advantage-1 .advantage-title {
 		margin-top: 24.5%;
-		padding-left: 12.5%;
+		padding-left: 12.7%;
 	    letter-spacing: 2px;
 	}
 }
@@ -1687,7 +1687,7 @@ main {
 		padding-right: 37px;
 		padding-bottom: 77px;
 		padding-left: 19px;
-		letter-spacing: 0.2px;
+		letter-spacing: 0.8px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -1705,7 +1705,7 @@ main {
 		padding-left: 13%;
 		padding-right: 20%;
 		line-height: 28px;
-		letter-spacing: 0.3px;
+		letter-spacing: 1.2px;
 	}
 }
 
@@ -1753,7 +1753,7 @@ main {
 @media (min-width: 961px) {
 	.advantage-2 .advantages-counter-container .advantage-counter {
 		top: -8px;
-		left: 1px;
+		left: 2px;
 	}
 }
 @media (max-width: 640px) {
@@ -1772,8 +1772,8 @@ main {
 @media (min-width: 961px) {
 	.advantage-2 .advantage-title {
 		margin-top: 24.5%;
-		padding-right: 19%;
-		text-align: right;
+		padding-left: 20%;
+		padding-right: 18%;
 		letter-spacing: 1.7px;
 	}
 }
@@ -1783,7 +1783,7 @@ main {
 		padding-right: 6px;
 		padding-bottom: 78px;
 		padding-left: 19px;
-		letter-spacing: 0.2px;
+		letter-spacing: 0.8px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
@@ -1801,7 +1801,7 @@ main {
 		padding-left: 20%;
 		padding-right: 7%;
 		line-height: 29px;
-		letter-spacing: 0.28px;
+		letter-spacing: 1.2px;
 	}
 }
 
@@ -1820,7 +1820,7 @@ main {
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.advantage-3 .advantages-counter-container {
-		bottom: -21px;
+		bottom: -22px;
 	}
 }
 @media (min-width: 961px) {
@@ -1846,7 +1846,7 @@ main {
 
 @media (min-width: 641px) and (max-width: 960px) {
 	.advantage-3 .advantages-counter-container .advantage-counter {
-		top: -8px;
+		top: -7px;
 		left: 1px;
 	}
 }
@@ -1854,7 +1854,7 @@ main {
 @media (min-width: 961px) {
 	.advantage-3 .advantages-counter-container .advantage-counter {
 		top: -7px;
-		left: -2px;
+		left: -1px;
 	}
 }
 @media (max-width: 640px) {
@@ -1866,14 +1866,14 @@ main {
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.advantage-3 .advantage-title {
-		padding-top: 48px;
+		padding-top: 49px;
 		padding-left: 32px;
 	}
 }
 @media (min-width: 961px) {
 	.advantage-3 .advantage-title {
 	    margin-top: 24.5%;
-		padding-left: 13%;
+		padding-left: 13.2%;
 		letter-spacing: 2.2px;
 	}
 }
@@ -1882,14 +1882,14 @@ main {
 		padding-top: 13px;
 		padding-bottom: 67px;
 		padding-left: 19px;
-		letter-spacing: 0.2px;
+		letter-spacing: 0.84px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.advantage-3 .advantage-description {
 		padding-top: 11px;
 		padding-right: 9%;
-		padding-bottom: 113px;
+		padding-bottom: 111px;
 		padding-left: 4.3%;
 		letter-spacing: 1.2px;
 	}
@@ -1900,7 +1900,7 @@ main {
 		padding-right: 18%;
 		padding-left: 13%;
 		line-height: 29px;
-		letter-spacing: 0.25px;
+		letter-spacing: 1.2px;
 	}
 }
 
