@@ -540,24 +540,31 @@ main {
 @media (max-width: 640px) {
 	span.feature-counter {
 		position: relative;
+		width: 17px;
+		height: 25px;
 		font-size: 14px;
 		font-weight: bold;
 		color: #000000;
+		text-align: center;
 		letter-spacing: 0.7px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	span.feature-counter {
 		position: relative;
+		width: 25px;
+		height: 40px;
 		font-size: 18px;
 		font-weight: 900;
+	    text-align: center;
 		color: #000000;
 	}
 }
 @media (min-width: 961px) {
 	span.feature-counter {
 		position: relative;
-		width: 22px;
+		width: 23px;
+		height: 22px;
 		font-size: 19px;
 		font-weight: bold;
 		color: #000000;
@@ -590,19 +597,16 @@ main {
 @media (min-width: 961px) {
 	span.feature-counter::before {
 		position: absolute;
-		top: 28px;
+		top: 27px;
 		content: "";
 		width: 20px;
 		height: 5px;
 		background-color: #5e42b0;
-		/*bottom: 4px;*/
 		border-radius: 2px;
 	}
 }
 @media (max-width: 640px) {
 	.feat-description {
-		padding-left: 20px;
-		padding-right: 20px;
 		font-weight: normal;
 		font-size: 15px;
 		line-height: 19px;
@@ -683,12 +687,11 @@ main {
 	.athlets-pic {
 		position: absolute;
 		top: -73px;
-		left: -162px;
-		width: 100%;
-		max-width: 497px;
-		height: 600px;
+		left: -163px;
+		width: 65%;
+		height: 134%;
 		background: url(../images/img/footballer_497.png) no-repeat;
-		background-size: 100%;
+	    background-position: 61% 0%;
 	}
 }
 @media (min-width: 961px) {
@@ -722,6 +725,9 @@ main {
 		position: relative;
 	}
 }
+.feature-title-wrapper {
+	display: flex;
+}
 
 /*Athlets feature-1*/
 .feature-1 {
@@ -751,47 +757,65 @@ main {
 	}
 }
 @media (max-width: 640px) {
+	.athlets-features .feature-1 .feature-title-wrapper {
+		padding-top: 22px;
+	}
+}
+@media (min-width: 641px) and (max-width: 960px) {
+	.athlets-features .feature-1 .feature-title-wrapper {
+		padding-top: 23px;
+	}
+}
+@media (min-width: 961px) {
+	.athlets-features .feature-1 .feature-title-wrapper {
+		padding-top: 26px;
+	}
+}
+
+@media (max-width: 640px) {
 	.athlets-features .feature-1 span.feature-counter {
-		top: 21px;
-		left: 20px;
+		top: 1px;
+		margin-left: 6.3%;
+		margin-right: 2.2%;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-1 span.feature-counter {
-		top: 30px;
-		left: 38%;
+		top: 7px;
+		margin-left: 37.6%;
+		margin-right: 1.2%;
 	}
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-1 span.feature-counter {
-		top: 79px;
-		left: 52.5%;
+		top: 53px;
+		margin-left: 52.5%;
+		margin-right: 0.5%;
 	}
 }
 @media (max-width: 640px) {
 	.athlets-features .feature-1 .feat-title {
-		padding-left: 44px;
 		letter-spacing: 1.2px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-1 .feat-title {
 		padding-top: 4px;
-		padding-left: 42%;
 	    letter-spacing: 1.5px;
 	}
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-1 .feat-title {
 		padding-top: 49px;
-		padding-left: 54.2%;
 		letter-spacing: 3px;
 	}
 }
 @media (max-width: 640px) {
 	.athlets-features .feature-1 .feat-description {
-		padding-top: 16px;
+		padding-top: 15px;
+		padding-right: 6%;
 		padding-bottom: 50px;
+		margin-left: 6%;
 		line-height: 19px;
 		letter-spacing: 0.75px;
 	}
@@ -803,7 +827,7 @@ main {
 		padding-bottom: 33px;
 		padding-left: 37.7%;
 		line-height: 28px;
-		letter-spacing: 1.4px;
+		letter-spacing: 1.3px;
 	}
 }
 @media (min-width: 961px) {
@@ -828,47 +852,49 @@ main {
 }
 @media (max-width: 640px) {
 	.athlets-features .feature-2 span.feature-counter {
-		top: 53px;
-		left: 20px;
+		top: 56px;
+		margin-left: 6.3%;
+		margin-right: 2.2%;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-2 span.feature-counter {
-		top: 34px;
-		left: 38%;
+		top: 35px;
+		margin-left: 37.6%;
+		margin-right: 1%;
 	}
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-2 span.feature-counter {
 		top: 58px;
-		left: 52.5%;
+		margin-left: 52.5%;
+		margin-right: 0.4%;
 	}
 }
 @media (max-width: 640px) {
 	.athlets-features .feature-2 .feat-title {
-		padding-top: 31px;
-		padding-left: 44px;
+		padding-top: 53px;
 		letter-spacing: 1.1px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-2 .feat-title {
-		padding-top: 6px;
-		padding-left: 42%;
+		padding-top: 32px;
 		letter-spacing: 1.5px;
 	}
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-2 .feat-title {
-		padding-top: 28px;
-		padding-left: 54%;
+		padding-top: 53px;
 		letter-spacing: 3.2px;
 	}
 }
 @media (max-width: 640px) {
 	.athlets-features .feature-2 .feat-description {
 		padding-top: 17px;
-		padding-bottom: 51px;
+		margin-right: 6%;
+		padding-bottom: 53px;
+		margin-left: 6%;
 		line-height: 18px;
 		letter-spacing: 0.75px;
 	}
@@ -886,9 +912,9 @@ main {
 @media (min-width: 961px) {
 	.athlets-features .feature-2 .feat-description {
 		padding-top: 17px;
-		padding-right: 10%;
+		margin-right: 10%;
 		padding-bottom: 53px;
-		padding-left: 52.3%;
+		margin-left: 52.3%;
 		line-height: 28px;
 	    letter-spacing: 0.57px;
 	}
@@ -907,20 +933,23 @@ main {
 }
 @media (max-width: 640px) {
 .athlets-features .feature-3 span.feature-counter {
-		top: 54px;
-		left: 20px;
+		top: 55px;
+		margin-left: 6.3%;
+		margin-right: 2.2%;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-3 span.feature-counter {
 		top: 35px;
-		left: 38%;
+		margin-left: 37.6%;
+		margin-right: 1.1%;
 	}
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-3 span.feature-counter {
-		top: 55px;
-		left: 52.5%;
+		top: 56px;
+		margin-left: 52.5%;
+		margin-right: 0.4%;
 	}
 }
 @media (max-width: 640px) {
@@ -960,29 +989,28 @@ main {
 }
 @media (max-width: 640px) {
 	.athlets-features .feature-3 .feat-title {
-		padding-top: 31px;
-		padding-left: 45px;
+		padding-top: 52px;
 		letter-spacing: 1.2px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.athlets-features .feature-3 .feat-title {
-		padding-top: 8px;
-		padding-left: 42%;
+		padding-top: 32px;
 		letter-spacing: 1.2px;
 	}
 }
 @media (min-width: 961px) {
 	.athlets-features .feature-3 .feat-title {
-		padding-top:25px;
-		padding-left: 54.2%;
+		padding-top: 52px;
 		letter-spacing: 3.4px;
 	}
 }
 @media (max-width: 640px) {
 	.athlets-features .feature-3 .feat-description {
 		padding-top: 18px;
+		margin-right: 6%;
 		padding-bottom: 54px;
+		margin-left: 6%;
 		line-height: 18px;
 	    letter-spacing: 0.75px;
 	}
@@ -1081,12 +1109,12 @@ main {
 @media (min-width: 641px) and (max-width: 960px) {
 	.players-pic {
 		position: absolute;
-		top: -127px;
-		width: 100%;
+		top: -129px;
+		width: 57%;
 		max-width: 436px;
-		height: 100%;
+		height: 135%;
 		background: url(../images/img/basketballer_436.png) no-repeat;
-		background-size: 100%;
+		background-position: 0 0;
 	}
 }
 @media (min-width: 961px) {
@@ -1115,58 +1143,70 @@ main {
 	.players-features .feature-1 {
 		padding-top: 56px;	}
 }
+@media (min-width: 641px) and (max-width: 960px) {
+	.players-features .feature-1 .feature-title-wrapper {
+		padding-top: 23px;
+	}
+}
+@media (min-width: 961px) {
+	.players-features .feature-1 .feature-title-wrapper {
+		padding-top: 26px;
+	}
+}
+
 @media (max-width: 640px) {
 	.players-features .feature-1 span.feature-counter {
-		top: 22px;
-		left: 20px;
+		top: 24px;
+		margin-left: 6.3%;
+		margin-right: 2.2%;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.players-features .feature-1 span.feature-counter {
-		top: 31px;
-		left: 4.2%;
+		top: 7px;
+		margin-left: 4%;
+		margin-right: 1%;
 	}
 }
 @media (min-width: 961px) {
 	.players-features .feature-1 span.feature-counter {
-		top: 82px;
-		left: 10%;
+		top: 57px;
+		margin-left: 10%;
+		margin-right: 0.3%;
 	}
 }
+@media (min-width: 1921px) {
+	.players-features .feature-1 span.feature-counter {
+		top: 57px;
+		margin-left: 18%;
+		margin-right: 0.5%;
+	}
+}
+
 @media (max-width: 640px) {
 	.players-features .feature-1 .feat-title {
+		padding-top: 22px;
 		padding-bottom: 17px;
-		padding-left: 45px;
 		letter-spacing: 1.2px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.players-features .feature-1 .feat-title {
 		padding-top: 4px;
-		padding-left: 8%;
 		letter-spacing: 1.8px;
 	}
 }
 @media (min-width: 961px) {
 	.players-features .feature-1 .feat-title {
 		padding-top: 52px;
-		padding-right: 50%;
-		padding-left: 11.5%;
 		letter-spacing: 2.9px;
-	}
-}
-@media (min-width: 1921px) {
-	.players-features .feature-1 .feat-title {
-		padding-top: 80px;
-		padding-left: 18%;
-		padding-right: 50%;
-		letter-spacing: 2.5px;
 	}
 }
 @media (max-width: 640px) {
 	.players-features .feature-1 .feat-description {
-		padding-bottom: 51px;
-		padding-left: 20px;
+		margin-right: 6%;
+		padding-bottom: 88px;
+		padding-left: 6%;
 		line-height: 18px;
 		letter-spacing: 0.75px;
 	}
@@ -1178,12 +1218,12 @@ main {
 		padding-bottom: 33px;
 		padding-left: 4%;
 		line-height: 27px;
-		letter-spacing: 1.34px;
+		letter-spacing: 1.31px;
 	}
 }
 @media (min-width: 961px) {
 	.players-features .feature-1 .feat-description {
-		padding-top: 16px;
+		padding-top: 18px;
 		padding-right: 50%;
 		padding-bottom: 58px;
 		padding-left: 10%;
@@ -1205,55 +1245,63 @@ main {
 /*Players feature-2*/
 @media (max-width: 640px) {
 	.players-features .feature-2 span.feature-counter {
-		top: 53px;
-		left: 20px;
+		top: 54px;
+		margin-left: 6.3%;
+		margin-right: 2.2%;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.players-features .feature-2 span.feature-counter {
-		top: 36px;
-		left: 4.5%;
+		top: 37px;
+		margin-left: 4%;
+		margin-right: 1%;
 	}
 }
 @media (min-width: 961px) {
 	.players-features .feature-2 span.feature-counter {
-		top: 52px;
-		left: 10%;
+		top: 51px;
+		margin-left: 10%;
+		margin-right: 0.5%;
+	}
+}
+@media (min-width: 1921px) {
+	.players-features .feature-2 span.feature-counter {
+		top: 57px;
+		margin-left: 18%;
+		margin-right: 0.5%;
 	}
 }
 @media (max-width: 640px) {
 	.players-features .feature-2 .feat-title {
-		padding-top: 30px;
+		padding-top: 51px;
 		padding-bottom: 18px;
-		padding-left: 46px;
 		letter-spacing: 1.1px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.players-features .feature-2 .feat-title {
-		padding-top: 9px;
-		padding-left: 8%;
+		padding-top: 33px;
 		letter-spacing: 1.8px;
 	}
 }
 @media (min-width: 961px) {
 	.players-features .feature-2 .feat-title {
-		padding-top: 22px;
+		padding-top: 47px;
 		padding-right: 50%;
-		padding-left: 11.7%;
 		letter-spacing: 3.1px;
 	}
 }
 @media (min-width: 1921px) {
 	.players-features .feature-2 .feat-title {
 		padding-top: 48px;
-		padding-left: 18%;
 		padding-right: 50%;
 	}
 }
 @media (max-width: 640px) {
 	.players-features .feature-2 .feat-description {
+		margin-right: 6%;
 		padding-bottom: 53px;
+		margin-left: 6%;
 		letter-spacing: 0.75px;
 	}
 }
@@ -1309,36 +1357,44 @@ main {
 }
 @media (max-width: 640px) {
 	.players-features .feature-3 span.feature-counter {
-		top: 50px;
-		left: 19px;
+		top: 51px;
+		margin-left: 6.3%;
+		margin-right: 2.2%;
 		color: #8765dd;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.players-features .feature-3 span.feature-counter {
-		top: 36px;
-		left: 4.5%;
+		top: 37px;
+		margin-left: 4%;
+		margin-right: 1%;
 		color: #8765dd;
 	}
 }
 @media (min-width: 961px) {
 	.players-features .feature-3 span.feature-counter {
 		top: 55px;
-		left: 10%;
+		margin-left: 10%;
+		margin-right: 0.3%;
 		color: #8765dd;
+	}
+}
+@media (min-width: 1921px) {
+	.players-features .feature-3 span.feature-counter {
+		top: 57px;
+		margin-left: 18%;
+		margin-right: 0.5%;
 	}
 }
 @media (max-width: 640px) {
 	.players-features .feature-3 span.feature-counter::before {
 		top: 19px;
-		left: 0;
 		background-color: #ffffff;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.players-features .feature-3 span.feature-counter::before {
 		top: 26px;
-		left: -1px;
 		width: 21px;
 		background-color: #ffffff;
 	}
@@ -1346,7 +1402,6 @@ main {
 @media (min-width: 961px) {
 	.players-features .feature-3 span.feature-counter::before {
 		top: 27px;
-		left: 0;
 		width: 22px;
 		height: 6px;
 		background-color: #ffffff;
@@ -1354,30 +1409,26 @@ main {
 }
 @media (max-width: 640px) {
 	.players-features .feature-3 .feat-title {
-		padding-top: 27px;
-		padding-left: 45px;
+		padding-top: 48px;
 		letter-spacing: 1.2px;
 	}
 }
 @media (min-width: 641px) and (max-width: 960px) {
 	.players-features .feature-3 .feat-title {
-		padding-top: 10px;
-		padding-left: 8.2%;
+		padding-top: 34px;
 		letter-spacing: 1.5px;
 	}
 }
 @media (min-width: 961px) {
 	.players-features .feature-3 .feat-title {
-		padding-top: 25px;
+		padding-top: 51px;
 		padding-right: 50%;
-		padding-left: 11.5%;
 		letter-spacing: 3.3px;
 	}
 }
 @media (min-width: 1921px) {
 	.players-features .feature-3 .feat-title {
 		padding-top: 50px;
-		padding-left: 18%;
 		padding-right: 50%;
 		letter-spacing: 2.5px;
 	}
@@ -1385,7 +1436,9 @@ main {
 @media (max-width: 640px) {
 	.players-features .feature-3 .feat-description {
 		padding-top: 17px;
+		margin-right: 6%;
 		padding-bottom: 53px;
+		margin-left: 6%;
 	    letter-spacing: 0.75px;
 	}
 }
@@ -1393,8 +1446,8 @@ main {
 	.players-features .feature-3 .feat-description {
 		padding-top: 16px;
 		padding-right: 35%;
-		padding-bottom: 32px;
-		padding-left: 4.5%;
+		padding-bottom: 33px;
+		padding-left: 4.3%;
 		font-size: 16px;
 		line-height: 28px;
 		letter-spacing: 1.79px;
@@ -1404,7 +1457,7 @@ main {
 	.players-features .feature-3 .feat-description {
 		padding-top: 22px;
 		padding-right: 50%;
-		padding-bottom: 59px;
+		padding-bottom: 58px;
 		padding-left: 10%;
 		font-size: 20px;
 		font-weight: normal;
@@ -1494,7 +1547,7 @@ main {
 @media (min-width: 1921px) {
 	.advantage-description {
 		font-size: 24px;
-		font-weight: 600;
+		font-weight: normal;
 		line-height: 28px;
 		color: #000000;
 	}
@@ -1773,7 +1826,7 @@ main {
 	.advantage-2 .advantage-title {
 		margin-top: 24.5%;
 		padding-left: 20%;
-		padding-right: 18%;
+		padding-right: 16%;
 		letter-spacing: 1.7px;
 	}
 }
